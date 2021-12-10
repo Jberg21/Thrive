@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    }
+html {
+    font-family: helvetica, sans-serif;
+}
+a {
+    text-decoration: none;
+}
+:root {
+    --white: #FFFFFF;
+    --light-pink: #F2C9D1;
+    --med-pink: #A6868F;
+    --dark-pink: #594548;
+    --dark-gold: #bba65f;
+    --black: #000000;
+    --gray: #BFB8B9;
+}
+/*-----------------*/
+/* NAV BAR SECTION */
+/*-----------------*/
+
+.links{
+    align-content: center;
+    
+}
+    
+.nav-bar {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    align-content: flex-end;
+    top: 0;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    align-content: flex-end;
+    justify-content: space-evenly;
+    padding: 2% 5%;
+    padding-left: 5vw;
+    list-style: none;
+    height: 2vh;
+    background-color: var(--light-pink);
+    }
+
+ulg {
+        display: flex;
+        /* align-items: center;
+        align-content: flex-end;
+        justify-content: space-evenly; */
+        padding: 1% 5%;
+        /* padding-left: 5vw; */
+        /* list-style: none; */
+        /* height: 1px; */
+        /* background-color: var(--); */
+        }
+
+li a {
+    display: block;
+    color: white;
+    align-content: flex-end;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: .5s ease-in-out;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+    
+#name {
+    color: var(--mid-green);
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 1px 1px 30px white;
+}
+#name:hover {
+    text-decoration: none;
+}
+.logo{
+    padding-top: 75px;
+
+}
+/*-----------------*/
+/*--HERO SECTION--*/
+/*-----------------*/
+
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.image-container {
+    position: relative;
+    background-image: url('../src/images/focusTree.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 0vh;
+    animation: scale 41s;
+    animation-iteration-count: infinite;
+}
+.site-logo {
+    width: 100%;
+    height: auto;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1.25);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.25);
+    }
+}
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.hero-text {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    font-size: 100px;
+    color: #fff;
+    /* text-transform: uppercase; */
+    z-index: 2;
+    text-shadow: -0px 4px 6px rgba(0, 0, 0, 1)
+    
+}
+
+.keyWord {
+    /* color: var(--mid-green); */
+    align-content: center;
+    /* font-style: italic; */
+    font-family: 'luxurious script';
+}
+
+
+/*-----------------*/
+/*----- About -----*/
+/*-----------------*/
+
+.aboutus{
+    margin: 10%;
+    width: 80%;
+    height: auto;
+    background-color: #f8f8f8;
+    box-shadow: -15px 7px 30px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+ 
+.about-container{
+    margin: 10px;
+    width: 40%;
+    height: auto;
+    background-color: #f8f8f8;
+    box-shadow: -15px 7px 30px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px; 
+    text-align: center;
+}
+
+.title-header{
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding-top: 80px;
+}
+
+.about-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+.image-container{
+    position: relative;
+    /* background-image: url('../src/images/'); */
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 0vh;
+    animation: scale 41s;
+    animation-iteration-count: infinite;
+}
+
+.about-image{
+    height: 600px;
+    width: 400px;
+    /* background-image: url(../src/images/); */
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 5px;
+}
+
+.about-carli{
+    height: auto;
+    font-size: 1.5rem;
+    margin: 60px;
+    text-align: center;
+}
+
+.about-carrie{
+    height: auto;
+    font-size: 1.5rem;
+    margin: 60px;
+    text-align: center;
+}
+.aboutcoachcarli{
+    width: 500px;
+    height: 400px;
+    background: #fff;
+    position: relative;
+    box-shadow: -15px 7px 30px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 50px;
+    /* background-image: url(../src/images/); */
+    background-size: cover;
+    background-position: left;
+}
+.aboutcoachcarrie{
+    width: 500px;
+    height: 400px;
+    background: #fff;
+    position: relative;
+    box-shadow: -15px 7px 30px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 50px;
+    /* background-image: url(../src/images/); */
+    background-size: cover;
+    background-position: left;
+}
