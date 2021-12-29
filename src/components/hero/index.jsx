@@ -12,8 +12,10 @@ function Hero() {
             </div>
             <div className="hero-text">
                 <h1>
-                    <span className="keyWord">Thrive</span>
+                    <span className="keyWord">Thrive <br /> Coaching and Cunsulting</span>
+                    
                 </h1>
+                
                 {/* <button className="buttonhero">
                     <a target="" href="/signup" >
                         <h3>Sign Up Today</h3>

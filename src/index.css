@@ -8,14 +8,20 @@ html {
 a {
     text-decoration: none;
 }
+
 :root {
-    --white: #FFFFFF;
-    --light-pink: #F2C9D1;
-    --med-pink: #A6868F;
-    --dark-pink: #594548;
-    --dark-gold: #bba65f;
+    --white: #F2F2F2;
+    --light-pink: #F2D0D0;
+    --med-pink: #F2BBBB;
+    /* --dark-pink: #594548; */
+    --dark-gold: #E3C059;
     --black: #000000;
-    --gray: #BFB8B9;
+    --gray: #BCBCBC;
+    --dark-gray: #595859;
+}
+@font-face {
+   font-family: 'LuckyDipCaitlin';
+   src: local('LuckyDipCaitlin'), url(../src/font/LuckyDipCaitlin.ttf); 
 }
 /*-----------------*/
 /* NAV BAR SECTION */
@@ -23,7 +29,8 @@ a {
 
 .links{
     align-content: center;
-    
+    font-family: 'LuckyDipCaitlin';
+    font-size: larger;    
 }
     
 .nav-bar {
@@ -90,13 +97,13 @@ li a:hover {
 
 .container {
     position: relative;
-    height: 100vh;
+    height: 200vh;
     width: 100%;
     overflow: hidden;
 }
 .image-container {
     position: relative;
-    background-image: url('../src/images/focusTree.jpg');
+    background-image: url('../src/images/tree.jpg');
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -121,7 +128,7 @@ li a:hover {
         transform: scale(1.25);
     }
 }
-.overlay {
+/* .overlay {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -129,7 +136,7 @@ li a:hover {
     left: 0;
     background: rgba(0, 0, 0, 0.2);
     z-index: 1;
-}
+} */
 
 .hero-text {
     display: flex;
@@ -139,7 +146,7 @@ li a:hover {
     position: absolute;
     top: 35%;
     left: 10%;
-    font-size: 100px;
+    font-size: 75px;
     color: #fff;
     /* text-transform: uppercase; */
     z-index: 2;
@@ -148,10 +155,10 @@ li a:hover {
 }
 
 .keyWord {
-    /* color: var(--mid-green); */
+    color: var(--dark-gold);
     align-content: center;
     /* font-style: italic; */
-    font-family: 'luxurious script';
+    font-family: 'LuckyDipCaitlin';
 }
 
 
@@ -169,7 +176,7 @@ li a:hover {
 }
  
 .about-container{
-    margin: 10px;
+    margin: 300px;
     width: 40%;
     height: auto;
     background-color: #f8f8f8;
